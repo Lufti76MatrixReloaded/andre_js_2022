@@ -16,4 +16,5 @@ for o in "$@"; do
   fi
 done
 
-open -na "/Users/andreluft/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/212.5712.43.2112.8512546/Android Studio.app/Contents/MacOS/studio" $wait --args "${ideargs[@]}"
+open -na "/Users/andreluft/Library/Application Suppor
+t/JetBrains/Toolbox/apps/AndroidStudio/ch-0/212.5712.43.2112.8512546/Android Studio.app/Contents/MacOS/studio" $wait --args "${ideargs[@]}"

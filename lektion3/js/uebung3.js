@@ -9,7 +9,12 @@ function aufgabe1() {
   console.debug("Aufgabe 1 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
-
+ let pizza = {
+    art: "Salami",
+    belag: "Käse und Salami",
+    skala: 8,
+    gerneIsst: true
+  }
   console.debug(pizza)
 }
 
@@ -25,6 +30,12 @@ function aufgabe2() {
     medium: "Anime"
   }
 
+  console.debug(Object.keys(ghibli))
+  console.debug(Object.values(ghibli))
+  console.debug(Object.entries(ghibli))
+}
+
+
   //ToDo: füge ab hier in den debugs Deinen Code ein
   console.debug()
   console.debug()
@@ -38,6 +49,15 @@ function aufgabe3() {
   console.debug("Aufgabe 3 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
+  let kuenstler = {
+    vorname: "Stan",
+    nachname: "Lee",
+    geboren: 1922,
+    gestorben: 2018,
+    taetigkeit: "Autor",
+    lieblingsWerk: "Amazing Fanatsy #15",
+    quote: "With great power there must also come great responsibility!"
+  }
 
   for (let key of Object.keys(kuenstler)) {
     console.debug(key + ": " + kuenstler[key])

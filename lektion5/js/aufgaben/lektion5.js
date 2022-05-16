@@ -7,7 +7,11 @@
  */
 function artikelAuflisten() {
     // ToDo: füge ab hier deinen Code ein
+    let artikelListe = ["Brokkoli", "Reis", "Streukäse"]
 
+    for (let i = 0; i < artikelListe.length; i++) {
+        console.debug(artikelListe[i])
+    }
 }
 
 /**
@@ -18,6 +22,19 @@ function allesAuflisten() {
     let gruppenListe = []
 
 // ToDo: füge ab hier deinen Code ein
+    let gruppenListe = []
+    let gemueseListe = ["Brokkoli", "Zwiebeln", "Salat"]
+    gruppenListe.push(gemueseListe)
+
+    let getreideListe = ["Reis", "Nudeln", "Quinoa"]
+    gruppenListe.push(getreideListe)
+
+    let milchListe = ["Streukäse", "Sahne", "Joghurt"]
+    gruppenListe.push(milchListe)
+
+    for (let i = 0; i < gruppenListe.length; i++) {
+        console.debug("Gruppe " + i + ": " + gruppenListe[i])
+    }
 }
 
 /**
@@ -26,7 +43,13 @@ function allesAuflisten() {
  */
 function artikelEntfernen() {
     // ToDo: füge ab hier deinen Code ein
+    let gemueseListe = ["Brokkoli", "Zwiebeln", "Salat"]
 
+    console.debug("gemueseListe vorher: ", gemueseListe)
+    for (let i = gemueseListe.length; i > 0 ; i--) {
+        gemueseListe.pop()
+    }
+    console.debug("gemueseListe nachher: ", gemueseListe)
 }
 
 /**
@@ -34,7 +57,24 @@ function artikelEntfernen() {
  */
 function sortieren() {
     // ToDo: füge ab hier deinen Code ein
+    let gruppenListe = []
+    let gemueseListe = ["Brokkoli", "Zwiebeln", "Salat"]
+    gruppenListe.push(gemueseListe)
+
+    let getreideListe = ["Reis", "Nudeln", "Quinoa"]
+    gruppenListe.push(getreideListe)
+
+    let milchListe = ["Streukäse", "Sahne", "Joghurt"]
+    gruppenListe.push(milchListe)
+
+    console.debug("gruppenListe vorher: ", gruppenListe)
+    for (let gruppe of gruppenListe) {
+        gruppe.sort()
+    }
+    gruppenListe.sort()
+    console.debug("gruppenListe nachher: ", gruppenListe)
 }
+
 
 export {
     artikelAuflisten, allesAuflisten, artikelEntfernen, sortieren
